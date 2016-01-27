@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<!DOCTYPE csaladfa [
+        <!ELEMENT csaladfa (szemely)*>
+        <!ELEMENT szemely (nev,szuletesi_ido,testver*,gyerek*,hazastars?)>
+        <!ATTLIST szemely
+                id CDATA #REQUIRED
+                sex CDATA #REQUIRED>
+        <!ELEMENT nev (vezeteknev+,keresztnev+)>
+        <!ELEMENT vezeteknev (#PCDATA)>
+        <!ELEMENT keresztnev (#PCDATA)>
+        <!ELEMENT szuletesi_ido (#PCDATA)>
+        <!ELEMENT testver (#PCDATA)>
+        <!ATTLIST testver
+                id CDATA #REQUIRED>
+        <!ELEMENT gyerek (#PCDATA)>
+        <!ATTLIST gyerek
+                id CDATA #REQUIRED>
+        <!ELEMENT hazastars (#PCDATA)>
+        <!ATTLIST hazastars
+                id CDATA #REQUIRED>
+        ]>
+<csaladfa>
+
+    <szemely id="g020" sex="ferfi">
+        <nev><vezeteknev>Varga</vezeteknev><keresztnev>Tamás</keresztnev></nev>
+        <szuletesi_ido>1931-07-14</szuletesi_ido>
+        <testver id="g01"/>
+    </szemely>
+    <szemely id="g010" sex="ferfi">
+        <nev><vezeteknev>Varga</vezeteknev><keresztnev>Mihály</keresztnev></nev>
+        <szuletesi_ido>1934-02-22</szuletesi_ido>
+        <gyerek id="m011"/>
+        <testver id="g020"/>
+    </szemely>
+
+    <szemely id="m011" sex="no">
+        <nev><vezeteknev>Záhonyiné</vezeteknev><vezeteknev>Varga</vezeteknev><keresztnev>Julianna</keresztnev></nev>
+        <szuletesi_ido>1959-07-22</szuletesi_ido>
+        <hazastars id="f011"/>
+        <gyerek id="c012" />
+        <gyerek id="c022" />
+        <gyerek id="c032" />
+    </szemely>
+
+    <szemely id="f011" sex="ferfi">
+        <nev><vezeteknev>Záhonyi</vezeteknev><keresztnev>György</keresztnev></nev>
+        <szuletesi_ido>1965-07-15</szuletesi_ido>
+        <hazastars id="m011"/>
+        <gyerek id="c012" />
+        <gyerek id="c022" />
+        <gyerek id="c032" />
+    </szemely>
+
+    <szemely id="c012" sex="no">
+        <nev><vezeteknev>Záhonyi</vezeteknev><keresztnev>Rebeka</keresztnev></nev>
+        <szuletesi_ido>1986-09-17</szuletesi_ido>
+        <hazastars id="f012"/>
+        <testver id="c022"/>
+        <testver id="c032"/>
+    </szemely>
+    <szemely id="f02" sex="ferfi">
+        <nev><vezeteknev>Gecse</vezeteknev><keresztnev>Milán</keresztnev></nev>
+        <szuletesi_ido>1985-10-06</szuletesi_ido>
+        <hazastars id="c012"/>
+    </szemely>
+    <szemely id="c022" sex="ferfi">
+        <nev><vezeteknev>Záhonyi</vezeteknev><keresztnev>Marci</keresztnev><keresztnev>Ferenc</keresztnev></nev>
+        <szuletesi_ido>1989-02-01</szuletesi_ido>
+        <testver id="c012"/>
+        <testver id="c032"/>
+    </szemely>
+
+    <szemely id="c032" sex="ferfi">
+        <nev><vezeteknev>Záhonyi</vezeteknev><keresztnev>Dani</keresztnev></nev>
+        <szuletesi_ido>1991-04-30</szuletesi_ido>
+        <testver id="c022"/>
+        <testver id="c012"/>
+    </szemely>
+
+
+</csaladfa>

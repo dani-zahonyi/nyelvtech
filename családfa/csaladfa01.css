@@ -1,0 +1,48 @@
+csaladfa{
+width: 100%;
+    margin:2em;
+}
+
+szemely,gyerek{
+    clear: both;
+    display:block;
+}
+
+hazastars {
+    position: absolute;
+    margin-left: 12em;
+    margin-top: -1.2em;
+    float: left;
+}
+nev{
+    color: #333333;
+    font-weight: bold;
+    display: block;
+}
+szemely >nev{
+    color:orangered;
+}
+keresztnev{
+margin-left: 0.3em;
+}
+
+[sex="ferfi"]{
+color:darkblue;
+}
+[sex="no"]{
+    color:deeppink;
+}
+gyerek{
+    margin-left: 8em;
+    margin-top: 1em;
+    clear: left;
+    display: block;
+}
+testver{
+    display: none;
+}
+
+
+/*testver,gyerek, hazastars{*/
+/*display: none;*/
+/*}*/

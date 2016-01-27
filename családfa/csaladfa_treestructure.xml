@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/css" href="csaladfa01.css" ?>
+<csaladfa  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="csaladfa.xsd" >
+   <szemely id="g01" sex="ferfi">
+       <nev><vezeteknev>Varga</vezeteknev><keresztnev>Mihály</keresztnev></nev>
+       <szuletesi_ido>1934-02-22</szuletesi_ido>
+       <gyerek id="m01" sex="no">
+           <nev><vezeteknev>Záhonyiné Varga</vezeteknev><keresztnev>Julianna</keresztnev></nev>
+            <szuletesi_ido>1959-07-22</szuletesi_ido>
+        <hazastars id="d01" sex="ferfi">
+            <nev><vezeteknev>Záhonyi</vezeteknev><keresztnev>György</keresztnev></nev>
+            <szuletesi_ido>1965-07-15</szuletesi_ido>
+        </hazastars>
+
+        <gyerek id="c01" sex="no">
+            <nev><vezeteknev>Záhonyi</vezeteknev><keresztnev>Rebeka</keresztnev></nev>
+            <szuletesi_ido>1986-09-17</szuletesi_ido>
+            <hazastars id="f01" sex="ferfi">
+                <nev><vezeteknev>Gecse</vezeteknev><keresztnev>Milán</keresztnev></nev>
+                <szuletesi_ido>1985-10-06</szuletesi_ido>
+            </hazastars>
+            <testver id="c02" sex="ferfi">   <nev><vezeteknev>Záhonyi</vezeteknev><keresztnev>Marci</keresztnev><keresztnev>Ferenc</keresztnev></nev>
+                <szuletesi_ido>1989-02-01</szuletesi_ido></testver>
+            <testver id="c03" sex="ferfi">      <nev><vezeteknev>Záhonyi</vezeteknev><keresztnev>Dani</keresztnev></nev>
+                <szuletesi_ido>1991-04-30</szuletesi_ido></testver>
+        </gyerek>
+        <gyerek id="c02" sex="ferfi">
+            <nev><vezeteknev>Záhonyi</vezeteknev><keresztnev>Marci</keresztnev><keresztnev>Ferenc</keresztnev></nev>
+            <szuletesi_ido>1989-02-01</szuletesi_ido>
+            <testver id="c01"  sex="no"> <nev><vezeteknev>Záhonyi</vezeteknev><keresztnev>Rebeka</keresztnev></nev>
+                <szuletesi_ido>1986-09-17</szuletesi_ido></testver>
+            <testver id="c03" sex="ferfi">      <nev><vezeteknev>Záhonyi</vezeteknev><keresztnev>Dani</keresztnev></nev>
+                <szuletesi_ido>1991-04-30</szuletesi_ido></testver>
+       </gyerek>
+        <gyerek id="c03" sex="ferfi">
+            <nev><vezeteknev>Záhonyi</vezeteknev><keresztnev>Dani</keresztnev></nev>
+            <szuletesi_ido>1991-04-30</szuletesi_ido>
+            <testver id="c02" sex="ferfi">   <nev><vezeteknev>Záhonyi</vezeteknev><keresztnev>Marci</keresztnev><keresztnev>Ferenc</keresztnev></nev>
+                <szuletesi_ido>1989-02-01</szuletesi_ido></testver>
+            <testver id="c01"  sex="no"> <nev><vezeteknev>Záhonyi</vezeteknev><keresztnev>Rebeka</keresztnev></nev>
+                <szuletesi_ido>1986-09-17</szuletesi_ido></testver>
+      </gyerek>
+    </gyerek>
+       <testver id="g02"  sex="ferfi">    <nev><vezeteknev>Varga</vezeteknev><keresztnev>Tamás</keresztnev></nev>
+           <szuletesi_ido>1931-07-14</szuletesi_ido></testver>
+   </szemely>
+    <szemely id="g02" sex="ferfi">
+        <nev><vezeteknev>Varga</vezeteknev><keresztnev>Tamás</keresztnev></nev>
+        <szuletesi_ido>1931-07-14</szuletesi_ido>
+        <testver id="g01"  sex="ferfi"> <nev><vezeteknev>Varga</vezeteknev><keresztnev>Mihály</keresztnev></nev>
+            <szuletesi_ido>1934-02-22</szuletesi_ido></testver>
+    </szemely>
+</csaladfa>

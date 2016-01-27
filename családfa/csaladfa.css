@@ -1,0 +1,88 @@
+csaladfa{
+    margin: 2em;
+}
+nev{
+    display: block;
+    color: orangered;
+}
+[sex="ferfi"]{
+    color: dodgerblue;
+}
+[sex="no"]{
+    color: deeppink;
+}
+
+keresztnev{margin-left: 0.2em}
+
+szemely{
+    clear: left;
+    width: 10em;
+    margin-top: 0.7em;
+    display: block;
+    padding: 0.2em 0.2em 0.2em 1em;
+    border-radius: 0.5em;
+}
+[id$= "1"]{
+    margin-left: 2em;
+}
+[id$= "2"]{
+    margin-left: 4em;
+}
+
+[id^="c"]{
+    background: lightgreen;
+}
+
+[id^="f"]{
+    margin-top: -4em;
+    margin-right : 20em;
+    clear:right;
+    float:right;
+}
+
+[id^="g"]{
+    background: lightsteelblue;
+}
+
+szemely:hover + [id^="f"] {
+    position: relative;
+    -webkit-animation-name: husband; /* Chrome, Safari, Opera */
+    -webkit-animation-duration: 4s; /* Chrome, Safari, Opera */
+    animation-name: husband;
+    animation-duration: 4s;
+
+}
+
+szemely:hover + [id^="f"]>nev {
+    -webkit-animation-name: white; /* Chrome, Safari, Opera */
+    -webkit-animation-duration: 4s; /* Chrome, Safari, Opera */
+    animation-name: white;
+    animation-duration: 4s;
+
+}
+/* Chrome, Safari, Opera */
+@-webkit-keyframes husband {
+    0%  { left:0px; }
+    50%  {background-color: hotpink; color: white; :-200px;}
+    100%  { left:0px; }
+}
+
+/* Standard syntax */
+@keyframes husband {
+    0%  { left:0px; }
+    50%  {background-color: hotpink; color: white;  left:-200px;}
+    100%  { left:0px; }
+}
+
+/* Chrome, Safari, Opera */
+@-webkit-keyframes white{
+    50%  {background-color: hotpink; color: white; :-200px;}
+}
+
+@keyframes white {
+    50%  { color: white; }
+}
+
+gyerek,hazastars,testver{
+    display: none;
+}

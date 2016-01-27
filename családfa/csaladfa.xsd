@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+  <xs:simpleType name="nemType">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="ferfi"/>
+      <xs:enumeration value="no"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:element name="csaladfa" type="csaladfaType"/>
+  <xs:complexType name="szemelyType">
+    <xs:sequence>
+      <xs:element type="nevType" name="nev"/>
+      <xs:element type="xs:date" name="szuletesi_ido"/>
+      <xs:element type="hazastarsType" name="hazastars" minOccurs="0"/>
+      <xs:element type="gyerekType" name="gyerek" maxOccurs="unbounded" minOccurs="0"/>
+      <xs:element type="testverType" name="testver" maxOccurs="unbounded" minOccurs="0"/>
+    </xs:sequence>
+    <xs:attribute type="xs:string" name="id" use="optional"/>
+    <xs:attribute type="nemType" name="sex" use="optional"/>
+  </xs:complexType>
+  <xs:complexType name="testverType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:string" name="id" use="optional"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="csaladfaType">
+    <xs:sequence>
+      <xs:element type="szemelyType" name="szemely" maxOccurs="unbounded" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="nevType">
+    <xs:sequence>
+      <xs:element type="xs:string" name="vezeteknev" maxOccurs="unbounded" minOccurs="1"/>
+      <xs:element type="xs:string" name="keresztnev" maxOccurs="unbounded" minOccurs="1"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="gyerekType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:string" name="id" use="optional"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="hazastarsType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:string" name="id" use="optional"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+</xs:schema>
